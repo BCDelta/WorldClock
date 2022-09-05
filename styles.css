@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+#nav-bar {
+    display: inline-block;
+    background: rgba(63, 63, 63, 0.5);
+    width: 100%;
+}
+.links {
+    background: rgba(63, 63, 63, 0.5);
+    border: none;
+    font-family: 'Impact';
+    font-size: 1rem;
+    padding: 1rem;
+    color: white; 
+}
+.links:hover, .links:focus{
+    background: rgb(167, 47, 47);
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    z-index: 10;
+    color: rgb(99, 99, 99);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.5rem);
+    background-color: white;
+    padding: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.city {
+    font-family:'Gill Sans';
+    font-size: 2vw;
+    letter-spacing: 5px;
+}
+#grid-menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    width: auto;
+    font-family: Helvetica;
+}
+.dropdown-heading {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.cities {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    letter-spacing: 1px;
+}
+.region {
+    color: white;
+    text-align: center;
+}
+.cityBlock {
+    display: inline-block;
+    width: 33%;
+    height: 100vh;
+}
+.cities:nth-child(1n){
+    margin-bottom: 25px;
+}
+a:hover {
+    background: rgba(167, 47, 47, 0.9);
+    color: white;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#globe-div {
+    text-align: center;
+    width: 100%;
+}
+h1 {
+    color: white;
+    font-family:'Gill Sans';
+    font-size: 3vw;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 2vw;
+    letter-spacing: 2px;
+}
+h5 {
+    color: white;
+    font-family:'Gill Sans';
+    font-size: 1vw;
+    letter-spacing: 1px;
+}
+#time-block {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 25%;
+    color: white;
+    font-family:'Trebuchet MS';
+    font-size: 1.5vw;
+    letter-spacing: 1.5px;
+    
+    position: relative;
+    margin: auto;
+    width: 60%;
+    padding: 2%;
+    margin-top: -20%;
+}
+#resized-time-block {
+    background-color: rgba(83, 83, 83, 0.5);
+    width: 25%;
+    color: white;
+    font-family:'Trebuchet MS';
+    font-size: 1.5vw;
+    letter-spacing: 1.5px;
+    
+    position: relative;
+    margin: auto;
+    width: 60%;
+    padding: 2%;
+
+}
+#time {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.479);
+    margin: -25px;
+}
+#hours, #minutes, #seconds {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    padding: 3px;
+}
+#clock {
+    font-family:'Gill Sans';
+    font-size: 2.5vw;
+    letter-spacing: 1.5px;
+}
+img.earth {
+    width: 25%;
+    height: auto;
+}
+image.background {
+    float: left;
+    width: 33.33%;
+}
+.lines {
+    width: 2rem;
+    height: 0.5rem;
+    background-color: white;
+    margin: 6px 0;
+    display: none;
+}
+#resized-dropdown {
+    border:none;
+    display: none;
+    background: rgb(51, 117, 202);
+}
+#resized-dropdown:hover, #resized-dropdown:focus {
+    display: none;
+    background: rgb(13, 31, 92);
+    border: 1px solid white;
+}
+#transition-night {
+    transition: all 2s ease;
+    background: black;
+}
+#transition-day {
+    transition: all 2s ease;
+    background: grey;
+}
+

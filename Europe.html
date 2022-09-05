@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+        <script src="clock.js" defer></script>
+        <script src="navbar.js" defer></script>
+        <script src="dropdown.js" defer></script>
+    </head>
+    <body onload="timeZoneEurope()">
+        <div id="nav-bar">
+            <button onclick ="dropdown()" id="resized-dropdown">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </button>
+            <div class="dropdown">
+                <button onclick="dropdown()" class="links">SELECT REGION</button>
+                <div id="myDropdown" class="dropdown-menu">
+                    <div id="grid-menu">
+                        <div>
+                            <div class="dropdown-heading">Main Page</div>
+                            <div class="cities">
+                                <a href="index.html">Home</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown-heading">North America</div>
+                            <div class="cities">
+                                <a href="North-America.html">Los Angeles</a>
+                                <a href="North-America.html">Chicago</a>
+                                <a href="North-America.html">New York</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown-heading">South America</div>
+                            <div class="cities">
+                                <a href="South-America.html">Puerto Rico</a>
+                                <a href="South-America.html">Buenos Aires</a>
+                                <a href="South-America.html">Lima</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown-heading">Africa</div>
+                            <div class="cities">
+                                <a href="Africa.html">Cairo</a>
+                                <a href="Africa.html">Johannesburg</a>
+                                <a href="Africa.html">Kinshasa</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown-heading">Europe</div>
+                            <div class="cities">
+                                <a href="Europe.html">London</a>
+                                <a href="Europe.html">Paris</a>
+                                <a href="Europe.html">Moscow</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown-heading">Asia</div>
+                            <div class="cities">
+                                <a href="Asia.html">Shanghai</a>
+                                <a href="Asia.html">Tokyo</a>
+                                <a href="Asia.html">Jakarta</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="dropdown-heading">Austrailia</div>
+                            <div class="cities">
+                                <a href="Australia.html">Perth</a>
+                                <a href="Australia.html">Sydney</a>
+                                <a href="Australia.html">Melbourne</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "region" style = "background-image: linear-gradient(rgba(40, 71, 155, 0.815), rgba(35, 105, 114, 0.747));">
+                <div class="cityBlock">
+                    <h2>London</h2>
+                    <p class="city"></p>
+                </div>
+                <div class="cityBlock">
+                    <h2>Paris</h2>
+                    <p class="city"></p>
+                </div>
+                <div class="cityBlock">
+                    <h2>Moscow</h2>
+                    <p class="city"></p>
+                </div>
+        </div>
+    </body>
+</html>
